@@ -11,15 +11,15 @@ Author: Ermias Asmare
 if( ! defined('ABSPATH') ) exit;
 
 function plugin_add_news(){
-    require_once plugin_dir_path(__FILE__).'setting/news.php';
+    require_once plugin_dir_path(__FILE__).'design/news.php';
 
 }
 
 
 add_shortcode('newsdisplay', 'plugin_add_news');
 
-function displayCode(){
-    require_once plugin_dir_path(__FILE__).'setting/news.php';
+function displayNews(){
+    require_once plugin_dir_path(__FILE__).'design/news.php';
 
 } 
 
